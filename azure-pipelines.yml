@@ -28,7 +28,7 @@ stages:
     ##copy Madus text NPM nodeJS task here
     NodeTool@0
       inputs:
-      versionSpec: '14.x' 
+         versionSpec: '14.x' 
         force32bit: false #
         Optional
         checkLatest: false #
@@ -54,7 +54,7 @@ stages:
     #     workingDir: 'ClientApp'
     #     verbose: false
     #     customCommand: 'run test'
-##copy .net sdk task here 2nd part
+
 - task: UseDotNet@2
       displayName: 'Use .NET Core sdk'
       inputs:
