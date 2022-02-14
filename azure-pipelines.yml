@@ -26,12 +26,13 @@ stages:
 
     steps:
     ##copy Madus text NPM nodeJS task here
- -    task:NodeTool@0
+  
+    - task: NodeTool@0
       inputs:
-         versionSpec: '14.x' 
-        force32bit: false #
-        Optional
-        checkLatest: false #
+        versionSpec: '14.x' 
+        force32bit: false # 
+
+        
 
     - task: Npm@1
       displayName: 'Restore Angular Dependencies'
@@ -55,17 +56,12 @@ stages:
     #     verbose: false
     #     customCommand: 'run test'
 
-- task: UseDotNet@2
-      displayName: 'Use .NET Core sdk'
+    - task: UseDotNet@2
+      displayName: ''Use .NET Core sdk''
       inputs:
         packageType: sdk
         version: 5.0.x
         installationPath: $(Agent.ToolsDirectory)/dotnet
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
 
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
