@@ -47,7 +47,7 @@ stages:
     #     workingDir: 'ClientApp'
     #     verbose: false
     #     customCommand: 'run test'
-
+##copy .net sdk task here 2nd part
     - task: DotNetCoreCLI@2
       displayName: 'Restore project dependencies'
       inputs:
