@@ -58,10 +58,10 @@ stages:
 
     - task: UseDotNet@2
       displayName: ''Use .NET Core sdk''
-      inputs:
-        packageType: sdk
-        version: 5.0.x
-        installationPath: $(Agent.ToolsDirectory)/dotnet
+      inputs
+        packageType:sdk
+        version:5.0.x
+        installationPath:$(Agent.ToolsDirectory)/dotnet\n
 
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
