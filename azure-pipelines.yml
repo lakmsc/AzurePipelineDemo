@@ -18,12 +18,14 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
+    ##Provide Pool Name Here
       name: MyFirstAgentPool
     
     variables:
       dotnetSdkVersion: '5.x'
 
     steps:
+    ##copy Madus text NPM nodeJS task here
     - task: Npm@1
       displayName: 'Restore Angular Dependencies'
       inputs:
