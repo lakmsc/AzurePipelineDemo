@@ -28,10 +28,11 @@ stages:
     ##copy Madus text NPM nodeJS task here
     NodeTool@0
       inputs:
-        versionSpec: '14.x' 
-        force32bit: false
+      versionSpec: '14.x' 
+        force32bit: false #
         Optional
-        checkLatest: false # Optional
+        checkLatest: false #
+
     - task: Npm@1
       displayName: 'Restore Angular Dependencies'
       inputs:
