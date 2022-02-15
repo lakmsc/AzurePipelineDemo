@@ -61,7 +61,7 @@ stages:
       inputs:
         packageType: sdk
         version:5.0.x
-    - task: DotNetCoreCLI@2
+    - task: UniversalPackages@0
       displayName: 'Build the project - $(buildConfiguration)'
       inputs:
         command: 'build'
