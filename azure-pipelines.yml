@@ -61,6 +61,8 @@ stages:
       inputs:
         packageType: sdk
         version: 5.0.x
+        installationPath: $(Agent.ToolsDirectory)/dotnet
+
 
     - task: UseDotNet@2
       displayName: 'Build the project - $(buildConfiguration)'
