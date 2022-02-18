@@ -22,7 +22,7 @@ stages:
       name: MyFirstAgentPool
     
     variables:
-      dotnetSdkVersion: '3.x'
+      dotnetSdkVersion: '5.8'
 
     steps:
     ##copy Madus text NPM nodeJS task here
