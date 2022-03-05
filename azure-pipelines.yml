@@ -22,7 +22,7 @@ stages:
       name: MyFirstAgentPool
     
     variables: 
-      dotnetSdkVersion: '5.1'
+      dotnetSdkVersion: '5.x'
 
     steps:
     ##cop Madus text NPM nodeJS task here
@@ -60,7 +60,7 @@ stages:
       displayName: 'Use .NET Core sdk'
       inputs:
         packageType: sdk
-        version: '5.1'
+        version: '5.x'
         installationPath: $(Agent.ToolsDirectory)/dotnet
 
 
