@@ -21,11 +21,11 @@ stages:
     ##Provide Pool Name Here
       name: MyFirstAgentPool
     
-    variables:
-     ##dotnetSdkVersion: '2.1.401'
+    variables: 
+      dotnetSdkVersion: '3.1'
 
     steps:
-    ##copy Madus text NPM nodeJS task here
+    ##cop Madus text NPM nodeJS task here
   
     - task: NodeTool@0
       inputs:
@@ -60,7 +60,7 @@ stages:
       displayName: 'Use .NET Core sdk'
       inputs:
         packageType: sdk
-        version: 3.1
+        version: '3.1'
         installationPath: $(Agent.ToolsDirectory)/dotnet
 
 
